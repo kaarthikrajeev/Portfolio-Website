@@ -6,13 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="bg-cyan-400">
     <nav class="p-5 bg-cyan-200  md:flex md:items-center md:justify-between">
-        <div>
+        <div class="flex justify-between items-center">
             <span class="text-2xl font-['Poppins'] cursor-pointer">Kaarthik Rajeev</span>
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block"><ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon></span>
         </div>
-        <ul class="md:flex md:items-center gap-8 z-[-1] md:z-auto md:static absolute bg-cyan-200 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-6 ">
+        <ul class="md:flex md:items-center gap-8 z-[-1] md:z-auto md:static absolute bg-cyan-200 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-500">
             <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a></li>
             <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl hover:text-cyan-500 duration-500">About</a></li>
             <li class="mx-4 my-6 md:my-0"><a href="#" class="text-xl hover:text-cyan-500 duration-500">Contact</a></li>
