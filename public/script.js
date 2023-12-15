@@ -22,3 +22,10 @@ function Menu(e){
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+  let loader=document.getElementById("preload")
+  let loader_bg=document.getElementById("load-bg")
+  window.addEventListener("load",()=>{
+    loader.style.display="none";
+    loader_bg.style.display="none";
+  })
