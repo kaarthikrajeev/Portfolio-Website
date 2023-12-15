@@ -17,7 +17,8 @@ function Menu(e){
         setTimeout(function(){
             msg.innerHTML=""
             msg.style.display="none"
-        },6000)
+        },6000) 
+        form.reset()
       })
       .catch(error => console.error('Error!', error.message))
   })
